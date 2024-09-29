@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account-HOKAGE Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="mini_project.html"><img src="images/logo.png" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="mini_project.html">Home</a></li>
+                <li><a href="products.html">Product</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="https://www.instagram.com/urstrulymaha._/">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+</div>
+<!----- account page----->
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/naruto1.png" width="55%" >
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="Indicator">
+
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password" maxlength="8" minlength="8">
+                            <a href="mini_project.html" class="btn" >Login</a>
+                            <a href="mini-project.html" class="btn">Continue without login</a>
+                            
+                        </form>
+
+                        <form id="RegForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password" maxlength="8" minlength="8">
+                            <a href="mini_project.html" class="btn" >Register</a>
+                            
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----- footer----->
+
+<div class="footer">
+    <div class="conatainer">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our Apple</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <a href="#"><img src="images/play-store.png" ></a>
+                    <a href="#"><img src="images/app-store.png" ></a>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-white.png">
+                <p> Our aim Is To make Hokage store choice of every weeb.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href = "review.html">Reviews</li></a>
+                    <li><a href = "returnpolicy.html">Return Policy</li></a>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <a href="https://www.facebook.com/profile.php?id=100039284318869"><li>Facebook</li></a>
+                    <a href="https://www.instagram.com/hokagestore__/"><li>Instagram</li></a>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 </p>
+    </div>
+    </div>
+<!----- js for toggle menu----->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+        if(MenuItems.style.maxHeight == "0px")
+          {
+             MenuItems.style.maxHeight = "200px"
+          }
+        else
+          {
+             MenuItems.style.maxHeight = "0px";
+          }
+    }
+</script>  
+
+<!----- js for toggle form----->
+<script>
+
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+
+    function register(){
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(100px)";
+    }
+
+    function login(){
+        RegForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
+    }
+
+
+
+</script>
+
+</body>
+</html>

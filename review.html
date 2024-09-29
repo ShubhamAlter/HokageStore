@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOKAGE Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <h2 class="title">Reviews</h2>
+    <section class="secRight">
+    <div class="para">
+        <p class="user">Mahaveer Yadav</p><hr>
+        <p class="sectionTag">Itadori Yuji Uniform</p>
+        <p class="sectionSubTag">What a Product! Didn't expected it would be this nice and comfortable.Its giving real yuji vibes ;).Worth It Must Purchase.</p>
+    </div>
+        <div class="thumbnail">
+            <img src="images/yuji1.jpg" class="imgFluid">
+        </div>
+    </section>
+    <section class="secLeft">
+        <div class="para">
+            <p class="user">Romit Yadav</p><hr>
+            <p class="sectionTag">Tanjoro's Earring</p>
+            <p class="sectionSubTag">Man, earrings were so comfortable, Its can be used as regular wear.I'm going now its afternoon now, want to keep nezuko safe . i will definately bring her back to normal :(</p>
+        </div>
+            <div class="thumbnail">
+                <img src="images/ear.jpg" class="imgFluid">
+            </div>
+        </section>
+        <section class="secRight">
+            <div class="para">
+                <p class="user">Shubham Vishwakarma</p><hr>
+                <p class="sectionTag">StrawHats Wanted Poster</p>
+                <p class="sectionSubTag">KHAIZOKU OU NI NARU OTOKO DA!!!.This wanted poster look soooo good in walls.Posters are good but please please please include jimbei too...</p>
+            </div>
+                <div class="thumbnail">
+                    <img src="images/allbounty.jpg" class="imgFluid">
+                </div>
+            </section>
+            <section class="secLeft">
+                <div class="para">
+                    <p class="user">Gaurav Tiwari</p><hr>
+                    <p class="sectionTag">Death Note NoteBook</p>
+                    <p class="sectionSubTag">I just need your name!.Its like an original deathnote.Page quality are good but that feather with it was not so good, its ok I have a pen :)</p>
+                </div>
+                    <div class="thumbnail">
+                        <img src="images/deathnote.jpg" class="imgFluid">
+                    </div>
+                </section>
+                <section class="secRight">
+                    <div class="para">
+                        <p class="user">Shivam Prajapati</p><hr>
+                        <p class="sectionTag">Wanted luffy Notebook</p>
+                        <p class="sectionSubTag">Great Product. Quality is good but there are very few pages(i think less than 100 pages).Please improve. </p>
+                    </div>
+                        <div class="thumbnail">
+                            <img src="images/luffy1.jpg" class="imgFluid">
+                        </div>
+                    </section>
+<<!----- footer----->
+
+<div class="footer">
+    <div class="conatainer">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our Apple</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <a href="#"><img src="images/play-store.png" ></a>
+                    <a href="#"><img src="images/app-store.png" ></a>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-white.png">
+                <p> Our aim Is To make Hokage store choice of every weeb.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href = "review.html">Reviews</li></a>
+                    <li><a href = "returnpolicy.html">Return Policy</li></a>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <a href="https://www.facebook.com/profile.php?id=100039284318869"><li>Facebook</li></a>
+                    <a href="https://www.instagram.com/hokagestore__/"><li>Instagram</li></a>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 </p>
+    </div>
+    </div>
+
+    <!----- js for toggle menu----->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+    
+        MenuItems.style.maxHeight = "0px";
+    
+        function menutoggle() {
+            if(MenuItems.style.maxHeight == "0px")
+              {
+                 MenuItems.style.maxHeight = "200px"
+              }
+            else
+              {
+                 MenuItems.style.maxHeight = "0px";
+              }
+        }
+        var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    
+    </script>  
+    </body>
+    </html>

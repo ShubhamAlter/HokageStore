@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> About - HOKAGE STORE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <style>
+        .navbar{background-color: #ffd6d6;
+        }
+        body{background-color: #ffd6d6;}
+        
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="mini_project.html"><img src="images/logo.png" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="mini_project.html">Home</a></li>
+                <li><a href="products.html">Product</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="https://www.instagram.com/urstrulymaha._/">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+</div>
+<div class="testimonial">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                
+                <a href="https://www.instagram.com/urstrulymaha._/"><img src="images/mahaveer1.jpeg"></a>
+                <a href="https://www.instagram.com/urstrulymaha._/"><h3>Mahaveer Yadav</h3></a>
+            </div>
+            <div class="col-3">
+                
+                <a href="https://www.instagram.com/datte.bayo__/"><img src="images/shubham.jpeg"></a>
+                <a href="https://www.instagram.com/datte.bayo__/"><h3>Shubham Vishwakarma</h3></a>
+            </div>
+           
+        </div>
+    </div>
+</div>
+<h3 class= "about">
+    We are passionate about our work. Because we love what we do, We have a steady source of motivation that drives us to do our best . We are making a mini project by using html , css , javascript . We are a huge fan of anime so we decided to make a website related to this . We are two in group (Mahaveer yadav & Shubham Vishwakarma) , We are pursuing BscIT course (currently in first year) . We hope that our website will gain some attention and be loved by respective individual .  
+</h3>
+
+<!----- footer----->
+
+<div class="footer">
+    <div class="conatainer">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our Apple</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <a href="#"><img src="images/play-store.png" ></a>
+                    <a href="#"><img src="images/app-store.png" ></a>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-white.png">
+                <p> Our aim Is To make Hokage store choice of every weeb.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href = "review.html">Reviews</li></a>
+                    <li><a href = "returnpolicy.html">Return Policy</li></a>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <a href="https://www.facebook.com/profile.php?id=100039284318869"><li>Facebook</li></a>
+                    <a href="https://www.instagram.com/hokagestore__/"><li>Instagram</li></a>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 </p>
+    </div>
+    </div>
+</footer>
+<!----- js for toggle menu----->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+        if(MenuItems.style.maxHeight == "0px")
+          {
+             MenuItems.style.maxHeight = "200px"
+          }
+        else
+          {
+             MenuItems.style.maxHeight = "0px";
+          }
+    }
+</script>  
+<!----- js for product gallery----->
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+    SmallImg[0].onclick = function()
+     {
+        ProductImg.src = SmallImg[0].src;
+     }
+    SmallImg[1].onclick = function()
+     {
+        ProductImg.src = SmallImg[1].src;
+     }
+    SmallImg[2].onclick = function()
+     {
+        ProductImg.src = SmallImg[2].src;
+     }
+    SmallImg[3].onclick = function()
+     {
+        ProductImg.src = SmallImg[3].src;
+    }
+    
+     
+
+    
+</script>
+
+
+</body>
+</html>

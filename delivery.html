@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Payment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"> 
+        
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+               <div class="navbar">
+                <div class="logo">
+                    <a href="mini_project.html"><img src="images/logo.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="mini_project.html">Home</a></li>
+                        <li><a href="products.html">Product</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="https://www.instagram.com/urstrulymaha._/">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+        
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+
+    <form method="post">
+              
+        <h3>Billing Address</h3>
+                <p>Full Name :<input type="text" name="fname1" placeholder="light yagami" required></p>
+                <p>E-Mail :<input type="email"  placeholder="light.kira@gmail.com" required></p>
+                Address : <p><textarea cols="20" rows="10" name = "address" placeholder = "Room No. , Place name , Area name , Landmark , City , Pin Code"required></textarea></p>
+                <p>City :<input type="text" placeholder="mumbai" required></p>
+                <p>State :<input type="text" name="state" placeholder="UP" required>
+                <p><input type="text" id="zip" name="zip" placeholder="400 072" required></p><hr style="border: 1px solid black;" >
+                <p style="font-size: 20px;">If user want COD please ignore below form</p>
+                      <h3>Payment</h3>
+                          <label for="fname">Accepted Cards</label>
+                            <i class="fa fa-cc-visa" style="color:navy;">Visa</i>
+                            <i class="fa fa-cc-amex" style="color:blue;">MasterCard</i>
+                            <i class="fa fa-cc-mastercard" style="color:red;">Credit cards</i>
+                            <i class="fa fa-cc-discover" style="color:orange;">Paypal</i>
+                          
+                          <p>Name On Card :<input type="text"  name="cardname" placeholder="Yagami Light"></p>
+                          <p>Card Number :<input type="text"  name="cardnumber" placeholder="1111-2222-3333-4444"></p>
+                          
+                          <p>Exp Month :<input type="text" name="expmonth" placeholder="September"></p>
+            
+                             
+                          <p>Exp Year :<input type="text" name="expyear" placeholder="2022"></p>
+                            
+                             
+                          <p>CVV :<input type="text"  name="cvv" placeholder="966"></p>
+                          <a href="success.html" target="_blank" class="btn" style="text-align: center; "input type="submit">Continue To Checkout</a>
+                        
+                    
+                    </form>
+                  
+              
+                
+<!----- footer----->
+
+<div class="footer">
+    <div class="conatainer">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our Apple</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <a href="#"><img src="images/play-store.png" ></a>
+                    <a href="#"><img src="images/app-store.png" ></a>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-white.png">
+                <p> Our aim Is To make Hokage store choice of every weeb.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href = "review.html">Reviews</li></a>
+                    <li><a href = "returnpolicy.html">Return Policy</li></a>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <a href="https://www.facebook.com/profile.php?id=100039284318869"><li>Facebook</li></a>
+                    <a href="https://www.instagram.com/hokagestore__/"><li>Instagram</li></a>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 </p>
+    </div>
+    </div>
+    <!----- js for toggle menu----->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+    
+        MenuItems.style.maxHeight = "0px";
+    
+        function menutoggle() {
+            if(MenuItems.style.maxHeight == "0px")
+              {
+                 MenuItems.style.maxHeight = "200px"
+              }
+            else
+              {
+                 MenuItems.style.maxHeight = "0px";
+              }
+        }
+
+    </script>  
+    </body>
+</html>
